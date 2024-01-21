@@ -2,8 +2,8 @@ import tkinter as tk
 #detect(svm_model, names, siren_sound)
 from try3 import detect, svm_model, names, siren_sound
 
-def start_detection(svm_model, names, siren_sound):
-    detect
+def start_detection():
+    detect(svm_model, names, siren_sound)
     
 def stop_local():
     pass

@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.decomposition import PCA
 
 logging.basicConfig(filename='logs.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-siren = r'C:\Users\Admin\Desktop\New folder\co.mp3'
+siren = r'./co.mp3'
 
 def load_data():
     mask = np.load('with_mask.npy')
@@ -82,7 +82,7 @@ def detect(svm, names, siren_sound):
             if cv2.waitKey(2) == 27:
                 break
 
-detect(svm_model, names, siren_sound)
+# detect(svm_model, names, siren_sound)
 def stop():
     capture.release()
     cv2.destroyAllWindows()
